@@ -4,5 +4,3 @@ class Calc:
 
     def power_of_two(x):
         return x ** 2
-
-print(Calc.power_of_two(int(input("Enter number:"))))
