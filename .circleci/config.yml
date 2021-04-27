@@ -6,7 +6,7 @@ jobs:
 
     working_directory: ~/repo
 
-    steps:git add .
+    steps: git add .
       # Step 1: obtain repo from GitHub
       - checkout
       # Step 2: create virtual env and install dependencies
