@@ -7,9 +7,3 @@ class Calc:
 
     def modulo(x, y):
         return x % y
-
-    def more_than_nine(string):
-        if len(string) > 9:
-            return True
-        else:
-            return False

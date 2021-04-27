@@ -1,9 +1,12 @@
-class StringMethods:
-    def more_than_nine(string):
-        if type(string) == str:
-            if len(string) > 9:
-                return True
-            else:
-                return False
-        else:
-            return False
+def convertToString(input):
+    if type(input) == str:
+        return input
+    else:
+        return str(input)
+
+
+def more_than_nine(string):
+    if len(convertToString(string)) > 9:
+        return True
+    else:
+        return False
