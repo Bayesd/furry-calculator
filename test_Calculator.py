@@ -1,5 +1,5 @@
 from Calculator import Calc
-from StringMethods import more_than_nine
+from StringMethods import more_than_nine, convert_to_string
 
 
 def test_add():
@@ -18,8 +18,14 @@ def test_modulo():
     assert 3 == Calc.modulo(8, 5)
 
 
+def test_convert_To_String():
+    assert type(convert_to_string(1234618)) == str
+    assert type(convert_to_string(True)) == str
+    assert type(convert_to_string(1234618)) != int
+    assert type(convert_to_string(True)) != bool
+
 def test_more_than_nine():
-    assert more_than_nine("Flaggstångsknopp") is True
-    assert more_than_nine("Ord") is False
-    assert more_than_nine(244) is False
-    assert more_than_nine(467382467823) is True
+    assert more_than_nine("Flaggstångsknopp") == True
+    assert more_than_nine("Ord") == False
+    assert more_than_nine(244) == False
+    assert more_than_nine(467382467823) == True
