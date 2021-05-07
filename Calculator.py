@@ -4,3 +4,6 @@ class Calc:
 
     def power_of_two(x):
         return x ** 2
+
+    def modulo(x, y):
+        return x % y
