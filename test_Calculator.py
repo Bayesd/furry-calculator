@@ -25,7 +25,7 @@ def test_convert_To_String():
     assert type(convert_to_string(True)) != bool
 
 def test_more_than_nine():
-    assert more_than_nine("Flaggstångsknopp") == True
-    assert more_than_nine("Ord") == False
-    assert more_than_nine(244) == False
-    assert more_than_nine(467382467823) == True
+    assert more_than_nine("Flaggstångsknopp") is True
+    assert more_than_nine("Ord") is False
+    assert more_than_nine(244) is False
+    assert more_than_nine(467382467823) is True
