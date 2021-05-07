@@ -1,5 +1,5 @@
 from Calculator import Calc
-from StringMethods import more_than_nine
+from StringMethods import more_than_nine, convert_to_string
 
 
 def test_add():
@@ -16,6 +16,13 @@ def test_power_of_two():
 def test_modulo():
     assert 2 == Calc.modulo(6, 4)
     assert 3 == Calc.modulo(8, 5)
+
+
+def test_convert_To_String():
+    assert type(convert_to_string(1234618)) == str
+    assert type(convert_to_string(True)) == str
+    assert type(convert_to_string(1234618)) != int
+    assert type(convert_to_string(True)) != bool
 
 
 def test_more_than_nine():
